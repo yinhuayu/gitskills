@@ -1,0 +1,62 @@
+git和gitee笔记：
+
+一、Git安装与仓库创建
+
+1、版本库又名仓库，英文名repository.
+2、创建一个版本库：创建一个空目录：
+$mkdir 文件名	创建目录
+$cd 文件名	切换目录
+$pwd		查看绝对路径
+$git init		将目录变成可管理的仓库
+$ls -ah		查看目录文件
+3、添加文件到git仓库
+分两步：
+（1）、使用命令git add <file>,可以反复多次使用，添加多个文件；
+（2）、使用命令git commit -m <message>,完成。
+4、git status:可以让我们时刻掌握仓库当前的状态
+5、git diff <file>:可以查看具体修改了什么内容
+
+二、时光机穿梭
+
+6、时空穿梭机：
+@穿梭前，git log 可以查看提交历史
+@git reflog 查看历史命令
+@git reset --hard HEAD	HEAD指向当前版本
+@git resert --hard commit id	在已存在的版本中自由穿梭
+7、工作区和暂存区
+@工作区（working directory）:就是电脑里能看到的目录（learngit）文件夹就是一个工作区
+@版本库（Repository）:工作区隐藏目录.git就是Git的版本库
+$里面的stage（或者叫index）就是暂存区，其自动创建第一个分支（master）以及指向master的一个指针叫HEAD。
+$把文件添加到Git版本库的时候分两步：
+<1>git add 把文件添加进去，实际上就是把文件修改添加到暂存区
+<2>git commit 提交更改，实际上是把暂存区的所有内容提交到当前分支（例如：master）
+8、git管理的是文件修改，每次修改，如果不用git add到暂存区，那就不会加入到commit中。
+9、撤销修改：
+@文件存在再工作区中：git checkout -- file，直接丢弃工作区的修改
+@文件存在在暂存区中：先git reset HEAD <file>回到上个场景；再git checkout -- file 丢弃修改。
+
+三、远程仓库
+
+10、远程仓库：
+建立git和GitHub仓库之间的传输通道。
+@首先需要通过SSH加密，
+第一步创建SSH Key，在用户主目录下注意有没有看到.ssh目录；
+创建命令：ssh-keygen -t rsa -C "your email"
+第二步登录GitHub，打开Setting，将秘钥代码（id_rsa）粘贴到Key中
+11、添加远程仓库
+@在GitHub中先创建一个空的仓库，仓库名最好与git主目录一致（learngit）
+@根据GitHub的提示，在本地的learngit仓库下运行命令进行关联：
+命令：git remote add origin git@server-name:path/repo-name.git
+@关联后使用命令第一次推送master分支的所有内容。
+命令：git push -u origin master
+此后，每次提交后，只要有必要，就可以使用命令git push origin master推送最新修改
+12、删除远程库
+@如果添加的时候信息写错了可以使用命令删除远程库
+命令：git remote -v 	查看远程库信息
+          git remote rm <name>	删除远程库
+13、克隆远程仓库;
+@要克隆一个仓库，首先要知道仓库的地址，然后使用git clone命令克隆
+@Git支持多种协议，包括https，但是ssh协议速度最快。
+
+四、分支管理
+
