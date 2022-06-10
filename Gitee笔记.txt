@@ -61,8 +61,9 @@ $把文件添加到Git版本库的时候分两步：
 四、分支管理
 
 1、分支的快速创建、切换、删除
-@创建分支，然后切换到分支：git checkout -b <branch_name>
-拆分开的命令为：git branch <branch_name>	git checkout <branch_name>
+@创建分支，然后切换到分支：git checkout -b <branch_name>或者git switch -c <name>
+拆分开的命令为：创建：git branch <branch_name>	
+		切换：git checkout <branch_name>或者git switch <name>
 @查看当前分支：git branch
 @合并当前分支：git merge <branch_name>
 @删除修改后的分支：git branch -d <branch_name>
