@@ -1,0 +1,34 @@
+
+GraphedExpression="fv.pos_fdbk", DisplayFormat=DISPLAY_FORMAT_DEC
+GraphedExpression="fv.iq"
+OpenDocument="foc.c", FilePath="D:/benmo_f303/src/foc.c", Line=604
+OpenDocument="soft_schd.c", FilePath="D:/benmo_f303/src/soft_schd.c", Line=0
+OpenDocument="main.c", FilePath="D:/benmo_f303/src/main.c", Line=52
+OpenDocument="startup_gd32f30x_hd.s", FilePath="D:/benmo_f303/startup_gd32f30x_hd.s", Line=6
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=0, w=257, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=2, w=257, h=422, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=1, w=257, h=421, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=3, y=0, w=471, h=200, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=0, w=305, h=658, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=305, h=608, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Terminal", DockArea=BOTTOM, x=0, y=0, w=502, h=200, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=1, y=0, w=1132, h=200, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=FLOATING, x=485, y=626, w=1327, h=711, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="1 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="1109;538", PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="1108;229", CodeGraphLegendShown=0, CodeGraphLegendPosition="1115;148"
+OpenWindow="Console", DockArea=BOTTOM, x=2, y=0, w=452, h=200, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[212;100;100;100;222]
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[184;119;164;89;237;100]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" fv.pos_fdbk";" fv.iq"], ColWidths=[100;100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[100;100;100;100;100;124;110;126;272]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[153;105;294]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[127;100;100;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+WatchedExpression="fv.speed_ref", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="pid_speed", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="fv.pos_ref", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="fv.pos_fdbk", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="pid_pos", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="fv.speed_rpm", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="pid_pos", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="fv.iq", RefreshRate=5, Window=Watched Data 1
